@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Angel Jimenez">
+    <meta name="keywords" content="HTML, CSS, Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome to GJA language school</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!--la libreria de iconos de BS-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS Personalizado -->
+    <link href="../custom.css" rel="stylesheet">
+
+    <!--google fonts utilizados-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!--barra de navegacion-->
+    
+      <div class="container-fluid">
+            <!-- barra superior fija, agregar elementos de responsividad-->
+            <div class="row superior text-center"> <!--text-md-start para alinear en tablet y desktop-->
+                <div class="col-12 col-md-auto mb-1 mb-md-0"> <!--mb margen botom, md es medium-->
+                    603 99 99 99
+                    <i class="bi bi-whatsapp me-2"></i> <!--ms margin start o me margin end para el espacio entre los iconos y el texto-->
+                    info@gjaacademy.com
+                    <i class="bi bi-envelope ms-2"></i>
+                </div>
+            </div>
+
+            <!--barra de navegación a las otras paginas -->
+            <div class="row">
+                <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container-fluid">
+
+                    <!--logo de la pagina web o marca(brand)-->
+                    <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png" alt="GJA" class="d-inline-block align-text-top" width="30" height="24">
+                    </a>
+                    <!--el botton toggler-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-toggler">
+                        <!-- comportamiento de la barra por defecto: "navbar-nav me-auto mb-2 mb-lg-0"-->
+                        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+
+                        <li class="nav-item"><a class="nav-link" href="#">  Home (main) </a>
+                        </li>
+
+                        <!--para ingles un dropdown-->
+                        <li class="nav-item"><a class="nav-link" href="english.html">  Gahriela's English class </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="frances.html"> Français </a>
+                        </li>
+                        
+                    </ul>
+
+
+                    </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+
+
+    <!--carrusel -->
+    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block">
+    <!--indicadores inferiores-->
+      <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- carrusel imagenes -->
+  <div class="carousel-inner d-none d-lg-block">
+    <div class="carousel-item active">
+      <img src="../img/bflag.jpg" class="w-100" alt=" curso de ingles">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Curso de Inglés</h3>
+        <h5>Mejora tu nivel de inglés con nuestros cursos interactivos</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="../img/french_learn.png" class="w-100" atl="curso de frances">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Curso de Francés</h3>
+        <h5>Aprende francés de manera divertida y efectiva</h5>
+      </div>
+    </div>
+    
+    <div class="carousel-item">
+      <img src="../img/bflag.jpg" class="w-100">
+      <div class="carousel-caption">
+        <h3>So learn with us</h3>
+        <h5> Aprende con humor </h5>
+      </div>
+    </div>
+  </div>
+  <!-- sliders controles para navegar -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+  </button>
+</div>
+
+<!-- imagenes sueltas cuando no tenemos carrusel -->
+<img src="../img/bflag.jpg" class="w-100 d-none d-md-flex d-lg-none" alt=" curso de ingles">
+<img src="../img/french_learn.png" class="w-100 d-none d-md-flex d-lg-none" atl="curso de frances">
+
+<!--mensaje inferior -->
+<div class="row text-center m-2">
+  <h5> So, what are you waiting for? Enroll now for a cheap price and get your certificate!</h5>
+
+<!--Pie de pagina-->
+<footer class="text-center py-3">
+  <p> &copy; 2025 GJA Language School. Todos los derechos reservados. </p>
+    <p>Síguenos en redes sociales:</p>
+  <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook m-2"></i></a>
+  <a href="https://www.instragram.com" target="_blank"><i class="bi bi-instagram m-2"></i></a>
+</footer>
+
+<!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
